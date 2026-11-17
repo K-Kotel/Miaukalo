@@ -1,0 +1,31 @@
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+
+# Сборка
+/build/
+/dist/
+
+# Локальные настройки и данные
+.env
+.env.*
+!.env.example
+/config.json
+/config.broken.json
+/config.tmp
+/library/
+/editor_audio/
+*.log
+
+# Редакторы и Windows
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
+.DS_Store

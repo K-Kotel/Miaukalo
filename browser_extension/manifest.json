@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Мяукало — звук вкладки",
+  "short_name": "Мяукало",
+  "version": "1.0.0",
+  "description": "Отправляет звук выбранной вкладки в программу «Мяукало» (как отдельный источник). Нажмите кнопку на нужной вкладке.",
+  "minimum_chrome_version": "116",
+  "permissions": ["tabCapture", "offscreen", "storage", "tabs"],
+  "background": { "service_worker": "background.js" },
+  "action": {
+    "default_title": "Мяукало: отправить звук этой вкладки",
+    "default_icon": { "32": "icon32.png", "128": "icon128.png" }
+  },
+  "icons": { "32": "icon32.png", "128": "icon128.png" },
+  "commands": {
+    "_execute_action": {
+      "suggested_key": { "default": "Alt+Shift+M" },
+      "description": "Отправить звук текущей вкладки в Мяукало / остановить"
+    }
+  }
+}
